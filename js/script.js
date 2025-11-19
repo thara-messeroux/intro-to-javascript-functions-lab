@@ -78,7 +78,6 @@ function isCharAVowel(char){
 
 console.log('Exercise 3 Result:', isCharAVowel("a"));
 
-
 /*
 Exercise 4: generateEmail()
 
