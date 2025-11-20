@@ -220,6 +220,8 @@ const basicCalculator2 = (num1, num2, operation) => {
 
 console.log('Exercise 9 Result:', basicCalculator2(10, 5, "subtract"));
 
+// Level up section
+
 /*
 Exercise 10: calculateGrade()
 
@@ -238,15 +240,20 @@ Complete the exercise in the space below:
 const calculateGrade = (score) => {
     if (score >= 90) {
         return 'A';
-    } else if (score >= 80 && score <= 85) {
+    } else if (score >= 80) {
         return 'B';
-    } else if (score >= 70 && score <= 79) {
+    } else if (score >= 70) {
         return 'C';
-    } else if (score >= 60 && score <= 69) {
+    } else if (score >= 60) {
         return 'D';
     } else {
         return 'F';
     }
 }
 
-console.log('Exercise 10 Result:', calculateGrade(85));
+console.log('Exercise 10 Result:', calculateGrade(85)); // → B ✨
+console.log('Test 95:', calculateGrade(95)); // → A ✨
+console.log('Test 72:', calculateGrade(72)); // → C ✨
+
+
+
