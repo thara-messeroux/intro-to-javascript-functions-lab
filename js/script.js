@@ -126,6 +126,7 @@ Example: maxOfThree(17, 4, 9) should return 17.
 
 Complete the exercise in the space below:
 */
+
 const maxOfThree = function (num1, num2, num3) {
     return Math.max(num1, num2, num3);
 }
@@ -189,6 +190,7 @@ Example: basicCalculator(10, 5, 'subtract') should return 5.
 
 Complete the exercise in the space below:
 */
+
 const basicCalculator = (num1, num2, operation) => {
     if (operation == 'add') {
         return num1 + num2;
@@ -255,5 +257,35 @@ console.log('Exercise 10 Result:', calculateGrade(85)); // → B ✨
 console.log('Test 95:', calculateGrade(95)); // → A ✨
 console.log('Test 72:', calculateGrade(72)); // → C ✨
 
+/*
+Exercise 11: createUsername()
 
+Define a function called createUsername. 
+It should take a first name and a last name and return a username. 
+
+The username should be a combination of the following:
+- The first three letters of the first name.
+- The first three letters of the last name.
+- The total character count of the first and last name combined.
+
+Example: createUsername('Samantha', 'Green') should return 'SamGre13'.
+
+Complete the exercise in the space below:
+*/
+
+function createUsername(firstName, lastName) {
+    // add const so variables don’t leak into global scope
+    // 1. get first 3 of firstName
+    const firstNameChars = firstName.slice(0, 3);
+    // 2. get first 3 of lastName
+    const lastNameChars = lastName.slice(0, 3);
+    // 3. count total characters
+    const totalChars = firstName.length + lastName.length;
+    // 4. return them combined
+    return `${firstNameChars}${lastNameChars}${totalChars}`;
+}
+
+console.log(createUsername("Samantha", "Green")); // "SamGre13"
+
+console.log('Exercise 11 Result:', createUsername("Samantha", "Green"));
 
