@@ -70,7 +70,6 @@ function isCharAVowel(char) {
 
 console.log('Exercise 3 Result:', isCharAVowel("a"));
 
-
 function isCharAVowel(char) {
     const vowels = ["a", "e", "i", "o", "u"];
     return vowels.includes(char.toLowerCase());
@@ -286,6 +285,19 @@ function createUsername(firstName, lastName) {
 }
 
 console.log(createUsername("Samantha", "Green")); // "SamGre13"
-
 console.log('Exercise 11 Result:', createUsername("Samantha", "Green"));
+
+/*
+Exercise 12: numArgs()
+
+Challenge yourself with numArgs. 
+This function should return the count of arguments passed to it when called.
+
+Complete the exercise in the space below:
+*/
+
+const numArgs = (...args) => args.length;
+
+console.log('Exercise 12 Result:', numArgs(1, 2, 3, 4));
+
 
